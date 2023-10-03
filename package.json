@@ -1,0 +1,45 @@
+{
+  "name": "npm-package-template",
+  "version": "0.0.0",
+  "description": "",
+  "author": "penpenpng",
+  "keywords": [],
+  "homepage": "https://github.com/penpenpng/npm-package-template",
+  "bugs": {
+    "url": "https://github.com/penpenpng/npm-package-template/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "module": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "src",
+    "dist",
+    "!src/__test__"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/penpenpng/npm-package-template"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
